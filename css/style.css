@@ -3,7 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 body{
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    position: relative;
+    background-color: red;
+
+}
+
+.red{
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+img{
+    height: 50%;
+
+}
+
+.text-color {
+    width: 450px;
+
+} 
+.yellow{
+    color: #FFFF00;
 }
